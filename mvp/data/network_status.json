@@ -1,0 +1,7 @@
+[
+  {"zip": "10019", "status": "NORMAL", "message": "No issues reported", "speed": "145 Mbps"},
+  {"zip": "90069", "status": "OUTAGE", "message": "Tower outage - power failure", "eta": "4:00 PM PST"},
+  {"zip": "10016", "status": "NORMAL", "message": "No issues reported", "speed": "178 Mbps"},
+  {"zip": "60614", "status": "NORMAL", "message": "No issues reported", "speed": "132 Mbps"},
+  {"zip": "30309", "status": "NORMAL", "message": "No issues reported", "speed": "167 Mbps"}
+]

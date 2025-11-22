@@ -1,0 +1,143 @@
+[
+  {
+    "resolution_id": "RES-BILL-001",
+    "title": "Apply 50% Roaming Courtesy Credit",
+    "category": "BILLING",
+    "confidence_base": 90,
+    "keywords": ["roaming", "international", "charges", "travel", "canada", "mexico", "bill", "high"],
+    "reasoning": "Customer has international roaming charges from verified trip. Long-term customer with perfect payment history deserves goodwill credit.",
+    "steps": [
+      "Verify roaming charges from trip dates",
+      "Acknowledge customer was unaware of charges",
+      "Apply 50% courtesy credit immediately",
+      "Educate on TravelPass option ($10/day)"
+    ],
+    "expected_outcome": "Customer satisfaction high, issue resolved"
+  },
+  {
+    "resolution_id": "RES-BILL-002",
+    "title": "Set Up TravelPass for Future Trips",
+    "category": "BILLING",
+    "confidence_base": 85,
+    "keywords": ["roaming", "international", "travel", "canada", "mexico", "trip"],
+    "reasoning": "Customer travels frequently. TravelPass auto-activates and saves money vs per-use roaming.",
+    "steps": [
+      "Explain TravelPass benefits ($10/day auto-activation)",
+      "Compare cost: 5 days = $50 vs current $67",
+      "Enable TravelPass on account",
+      "Provide confirmation and usage guide"
+    ],
+    "expected_outcome": "Proactive solution prevents future billing surprises"
+  },
+  {
+    "resolution_id": "RES-BILL-003",
+    "title": "Review Account for Additional Credits",
+    "category": "BILLING",
+    "confidence_base": 75,
+    "keywords": ["bill", "charges", "high", "expensive"],
+    "reasoning": "Long-term loyal customer may qualify for retention offers or loyalty credits.",
+    "steps": [
+      "Check customer tenure and payment history",
+      "Review recent billing patterns",
+      "Apply available loyalty discounts",
+      "Offer autopay discount if not enrolled"
+    ],
+    "expected_outcome": "Customer feels valued and appreciated"
+  },
+  {
+    "resolution_id": "RES-TECH-001",
+    "title": "Enable WiFi Calling + $35 Service Credit",
+    "category": "TECHNICAL",
+    "confidence_base": 92,
+    "keywords": ["outage", "no service", "network", "tower", "down", "work", "home"],
+    "reasoning": "Confirmed network outage in customer area. WiFi calling provides immediate workaround. Premium customer working from home needs immediate solution.",
+    "steps": [
+      "Confirm outage in customer's ZIP code",
+      "Verify customer has WiFi access",
+      "Guide through WiFi calling setup step-by-step",
+      "Apply $35 service disruption credit",
+      "Set up restoration notification alert"
+    ],
+    "expected_outcome": "Immediate workaround provided, customer can continue business"
+  },
+  {
+    "resolution_id": "RES-TECH-002",
+    "title": "Escalate to Priority Restoration Team",
+    "category": "TECHNICAL",
+    "confidence_base": 85,
+    "keywords": ["outage", "hours", "urgent", "business", "work"],
+    "reasoning": "Extended outage impacting business operations. Premium customer requires priority attention.",
+    "steps": [
+      "Document business impact in ticket",
+      "Escalate to network operations center",
+      "Request priority restoration status",
+      "Provide direct line for updates",
+      "Follow up every hour until resolved"
+    ],
+    "expected_outcome": "Customer feels prioritized and heard"
+  },
+  {
+    "resolution_id": "RES-TECH-003",
+    "title": "Set Up Proactive Outage Notifications",
+    "category": "TECHNICAL",
+    "confidence_base": 78,
+    "keywords": ["outage", "notification", "alert", "informed"],
+    "reasoning": "Customer was frustrated by lack of notification. Prevent future communication gaps.",
+    "steps": [
+      "Verify contact preferences (SMS, email)",
+      "Enable network outage alerts",
+      "Test notification system",
+      "Provide status page URL",
+      "Apologize for communication failure"
+    ],
+    "expected_outcome": "Future outages won't catch customer off guard"
+  },
+  {
+    "resolution_id": "RES-ACT-001",
+    "title": "Manual SIM Activation + APN Configuration",
+    "category": "ACTIVATION",
+    "confidence_base": 92,
+    "keywords": ["activate", "sim", "new", "setup", "no service", "pixel", "android"],
+    "reasoning": "New customer BYOD activation. Missing APN configuration is common issue.",
+    "steps": [
+      "Verify device IMEI compatibility",
+      "Register SIM card in system",
+      "Walk through APN setup (TelcoMax/wholesale)",
+      "Test data and SMS",
+      "Provide voicemail and app setup info"
+    ],
+    "expected_outcome": "Successful activation, positive first impression"
+  },
+  {
+    "resolution_id": "RES-DEV-001",
+    "title": "Force Restart + iCloud Backup Setup",
+    "category": "DEVICE_SUPPORT",
+    "confidence_base": 88,
+    "keywords": ["iphone", "won't turn on", "black screen", "update", "ios"],
+    "reasoning": "iPhone interrupted during iOS update. Force restart resolves 93% of cases.",
+    "steps": [
+      "Have customer plug in device",
+      "Guide through force restart procedure",
+      "Wait for update to complete",
+      "Verify data integrity",
+      "Set up iCloud backup for future protection"
+    ],
+    "expected_outcome": "Device restored, data intact, backup enabled"
+  },
+  {
+    "resolution_id": "RES-SALES-001",
+    "title": "Upgrade to Premium Plan with ROI Analysis",
+    "category": "SALES",
+    "confidence_base": 86,
+    "keywords": ["upgrade", "hotspot", "limit", "data", "business", "travel"],
+    "reasoning": "Business customer hitting hotspot limits. Premium plan offers better value with international benefits.",
+    "steps": [
+      "Analyze current usage patterns",
+      "Present Plus and Premium options",
+      "Calculate TravelPass savings for frequent travelers",
+      "Demonstrate ROI of Premium vs Plus",
+      "Process upgrade with prorated billing"
+    ],
+    "expected_outcome": "Successful upsell, customer needs met"
+  }
+]

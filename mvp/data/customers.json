@@ -1,0 +1,161 @@
+[
+  {
+    "customer_id": "TC-887234",
+    "name": "John Smith",
+    "email": "john.smith@email.com",
+    "phone": "(555) 234-8877",
+    "address": {
+      "street": "142 West 57th Street",
+      "unit": "Apt 12B",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10019"
+    },
+    "account_status": "ACTIVE",
+    "customer_since": "2021-03-12",
+    "tenure_months": 38,
+    "lifetime_value": 3419.62,
+    "payment_history": {
+      "total_payments": 38,
+      "missed_payments": 0,
+      "on_time_percentage": 100,
+      "last_payment_date": "2024-11-01",
+      "payment_method": "Auto-pay Credit Card"
+    },
+    "plan": {
+      "name": "Unlimited Plus",
+      "code": "UNL-PLUS-5G",
+      "monthly_cost": 89.99,
+      "data": "Unlimited",
+      "hotspot": "50GB"
+    },
+    "device": {
+      "manufacturer": "Apple",
+      "model": "iPhone 14 Pro",
+      "imei": "359245109876543"
+    },
+    "autopay": true
+  },
+  {
+    "customer_id": "TC-923461",
+    "name": "Maria Rodriguez",
+    "email": "m.rodriguez82@gmail.com",
+    "phone": "(555) 876-4321",
+    "address": {
+      "street": "8542 Sunset Boulevard",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90069"
+    },
+    "account_status": "ACTIVE",
+    "customer_since": "2019-07-22",
+    "tenure_months": 58,
+    "lifetime_value": 5799.42,
+    "payment_history": {
+      "total_payments": 58,
+      "missed_payments": 0,
+      "on_time_percentage": 100,
+      "last_payment_date": "2024-11-01",
+      "payment_method": "Auto-pay Bank Account"
+    },
+    "plan": {
+      "name": "Unlimited Premium",
+      "code": "UNL-PREM-5G",
+      "monthly_cost": 99.99,
+      "data": "Unlimited",
+      "hotspot": "100GB"
+    },
+    "device": {
+      "manufacturer": "Samsung",
+      "model": "Galaxy S24 Ultra",
+      "imei": "352867104523876"
+    },
+    "autopay": true
+  },
+  {
+    "customer_id": "TC-104529",
+    "name": "David Chen",
+    "email": "david.chen.tech@outlook.com",
+    "phone": "(555) 432-1987",
+    "address": {
+      "street": "450 Park Avenue South",
+      "unit": "Unit 5A",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10016"
+    },
+    "account_status": "ACTIVE",
+    "customer_since": "2024-05-15",
+    "tenure_months": 0,
+    "plan": {
+      "name": "Unlimited Essential",
+      "code": "UNL-ESS-5G",
+      "monthly_cost": 65.00,
+      "data": "Unlimited",
+      "hotspot": "12GB"
+    },
+    "device": {
+      "manufacturer": "Google",
+      "model": "Pixel 8",
+      "imei": "354378092847561"
+    },
+    "autopay": false
+  },
+  {
+    "customer_id": "TC-776234",
+    "name": "Patricia Johnson",
+    "email": "pjohnson1967@yahoo.com",
+    "phone": "(555) 654-7890",
+    "address": {
+      "street": "2341 Oak Street",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60614"
+    },
+    "account_status": "ACTIVE",
+    "customer_since": "2016-01-05",
+    "tenure_months": 100,
+    "plan": {
+      "name": "Unlimited Plus",
+      "code": "UNL-PLUS-5G",
+      "monthly_cost": 89.99,
+      "data": "Unlimited",
+      "hotspot": "50GB"
+    },
+    "device": {
+      "manufacturer": "Apple",
+      "model": "iPhone 12",
+      "imei": "356789012345678"
+    },
+    "autopay": true
+  },
+  {
+    "customer_id": "TC-334876",
+    "name": "Marcus Williams",
+    "email": "m.williams.consulting@gmail.com",
+    "phone": "(555) 789-3456",
+    "address": {
+      "street": "7845 Peachtree Street NE",
+      "unit": "Suite 200",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30309"
+    },
+    "account_status": "ACTIVE",
+    "customer_since": "2022-06-10",
+    "tenure_months": 23,
+    "plan": {
+      "name": "Unlimited Essential",
+      "code": "UNL-ESS-5G",
+      "monthly_cost": 65.00,
+      "data": "Unlimited",
+      "hotspot": "12GB"
+    },
+    "device": {
+      "manufacturer": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "imei": "358967104523456"
+    },
+    "autopay": true
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "customer_id": "TC-887234",
+    "tickets": [
+      {"ticket_id": "TKT-445821", "date": "2024-03-28", "category": "TECHNICAL", "status": "CLOSED", "summary": "Slow data speeds"}
+    ]
+  },
+  {
+    "customer_id": "TC-923461",
+    "tickets": [
+      {"ticket_id": "TKT-487632", "date": "2024-02-10", "category": "SALES", "status": "CLOSED", "summary": "Device purchase"}
+    ]
+  },
+  {
+    "customer_id": "TC-104529",
+    "tickets": []
+  },
+  {
+    "customer_id": "TC-776234",
+    "tickets": [
+      {"ticket_id": "TKT-665432", "date": "2024-01-18", "category": "TECHNICAL", "status": "CLOSED", "summary": "Email setup"}
+    ]
+  },
+  {
+    "customer_id": "TC-334876",
+    "tickets": [
+      {"ticket_id": "TKT-723456", "date": "2024-03-02", "category": "BILLING", "status": "CLOSED", "summary": "Update tax ID"}
+    ]
+  }
+]

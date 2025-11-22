@@ -1,0 +1,75 @@
+[
+  {
+    "customer_id": "TC-887234",
+    "current_bill": {
+      "amount": 156.43,
+      "due_date": "2024-05-30",
+      "status": "UNPAID",
+      "breakdown": {
+        "plan_charges": 89.99,
+        "roaming_charges": 67.44,
+        "taxes": -1.00
+      }
+    },
+    "recent_bills": [
+      {"date": "2024-04-15", "amount": 89.99, "status": "PAID"},
+      {"date": "2024-03-15", "amount": 89.99, "status": "PAID"}
+    ]
+  },
+  {
+    "customer_id": "TC-923461",
+    "current_bill": {
+      "amount": 114.98,
+      "due_date": "2024-05-30",
+      "status": "UNPAID",
+      "breakdown": {
+        "plan_charges": 99.99,
+        "device_protection": 14.99
+      }
+    },
+    "recent_bills": [
+      {"date": "2024-04-15", "amount": 114.98, "status": "PAID"}
+    ]
+  },
+  {
+    "customer_id": "TC-104529",
+    "current_bill": {
+      "amount": 65.00,
+      "due_date": "2024-05-30",
+      "status": "UNPAID",
+      "breakdown": {
+        "plan_charges": 65.00
+      }
+    },
+    "recent_bills": []
+  },
+  {
+    "customer_id": "TC-776234",
+    "current_bill": {
+      "amount": 101.98,
+      "due_date": "2024-05-30",
+      "status": "UNPAID",
+      "breakdown": {
+        "plan_charges": 89.99,
+        "device_protection": 11.99
+      }
+    },
+    "recent_bills": [
+      {"date": "2024-04-15", "amount": 101.98, "status": "PAID"}
+    ]
+  },
+  {
+    "customer_id": "TC-334876",
+    "current_bill": {
+      "amount": 65.00,
+      "due_date": "2024-05-30",
+      "status": "UNPAID",
+      "breakdown": {
+        "plan_charges": 65.00
+      }
+    },
+    "recent_bills": [
+      {"date": "2024-04-15", "amount": 65.00, "status": "PAID"}
+    ]
+  }
+]
