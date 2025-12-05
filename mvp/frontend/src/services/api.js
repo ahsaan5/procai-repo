@@ -37,7 +37,29 @@ export const api = {
     axios.post(`${API_BASE}/end_call_feedback`, data),
 
   getMetrics: () =>
-    axios.get(`${API_BASE}/metrics`)
+    axios.get(`${API_BASE}/metrics`),
+
+  // Supervisor endpoints
+  getSupervisorDashboard: () =>
+    axios.get(`${API_BASE}/supervisor/dashboard`),
+
+  getCallDetails: (callId) =>
+    axios.get(`${API_BASE}/supervisor/call/${callId}`),
+
+  getInterventionPlan: (callId) =>
+    axios.get(`${API_BASE}/supervisor/intervention-plan/${callId}`),
+
+  initiateIntervention: (data) =>
+    axios.post(`${API_BASE}/supervisor/intervene`, data),
+
+  completeInterventionStep: (data) =>
+    axios.post(`${API_BASE}/supervisor/intervention-step`, data),
+
+  completeIntervention: (callId) =>
+    axios.post(`${API_BASE}/supervisor/intervention-complete/${callId}`),
+
+  getSupervisorMetrics: () =>
+    axios.get(`${API_BASE}/supervisor/metrics`)
 };
 
 export const createWebSocket = (callId) => {

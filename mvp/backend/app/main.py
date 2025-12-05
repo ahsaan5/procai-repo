@@ -32,3 +32,6 @@ app.include_router(routes.router, prefix="/api")
 
 from app import websocket_handler
 app.include_router(websocket_handler.router)
+
+from app import supervisor_routes
+app.include_router(supervisor_routes.router)

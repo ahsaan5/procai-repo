@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './supervisor.css';
 import { api, createWebSocket } from './services/api';
 import CustomerPanel from './components/CustomerPanel';
 import TranscriptPanel from './components/TranscriptPanel';
@@ -7,6 +8,7 @@ import AIInsights from './components/AIInsights';
 import SolutionsPanel from './components/SolutionsPanel';
 import MetricsBar from './components/MetricsBar';
 import CallSummary from './components/CallSummary';
+import SupervisorDashboard from './components/SupervisorDashboard';
 
 // Fake solutions for Call 1 (Billing) - Brief format
 const CALL1_SOLUTIONS = [
@@ -117,6 +119,7 @@ const CALL2_SOLUTIONS = [
 ];
 
 function App() {
+  const [showSupervisor, setShowSupervisor] = useState(false);
   const [callActive, setCallActive] = useState(false);
   const [customer, setCustomer] = useState(null);
   const [billing, setBilling] = useState(null);
@@ -297,6 +300,11 @@ function App() {
     setCustomInsights(null);
   };
 
+  // If supervisor view is active, show supervisor dashboard
+  if (showSupervisor) {
+    return <SupervisorDashboard onBackToAgent={() => setShowSupervisor(false)} />;
+  }
+
   return (
     <div className="App">
       {/* Call Summary Modal */}
@@ -314,6 +322,9 @@ function App() {
               </button>
               <button onClick={() => startDemoCall('CALL-002', 'TC-923461')} className="btn-primary">
                 📞 Start Demo Call 2 (Outage)
+              </button>
+              <button onClick={() => setShowSupervisor(true)} className="btn-supervisor">
+                👥 Supervisor View
               </button>
             </div>
           ) : (

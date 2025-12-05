@@ -1,0 +1,344 @@
+{
+  "demo_scenario": {
+    "scenario_id": "SUPERVISOR-DEMO-001",
+    "title": "Network Outage Escalation - Supervisor Intervention",
+    "description": "Demonstrates supervisor monitoring of high-risk call and AI-guided intervention",
+    "duration_seconds": 45,
+    "demo_calls": [
+      {
+        "call_id": "CALL-002",
+        "customer_id": "TC-923461",
+        "agent_id": "AGT-102",
+        "agent_name": "Sarah Mitchell",
+        "customer_name": "Maria Rodriguez",
+        "issue_category": "Network Outage",
+        "call_duration_seconds": 185,
+        "sentiment": "ANGRY",
+        "sentiment_emoji": "😠",
+        "risk_score": 85,
+        "is_flagged": true,
+        "status": "in_progress",
+        "flagged_at": "00:03:05",
+        "flag_reason": "Negative sentiment trending for 3+ minutes, customer threatening cancellation",
+        "customer_details": {
+          "phone": "(323) 555-0142",
+          "zip_code": "90069",
+          "plan": "Premium Unlimited",
+          "monthly_value": 120.0,
+          "tenure_months": 26,
+          "ltv": 2890.0,
+          "payment_history": "Perfect"
+        },
+        "issue_details": {
+          "type": "Network Outage",
+          "severity": "HIGH",
+          "description": "Service outage affecting West Hollywood (90069) for 3+ hours",
+          "business_impact": "Work-from-home customer unable to make business calls",
+          "tower_status": "Maintenance in progress, ETA 4:00 PM",
+          "outage_duration": "3 hours 15 minutes"
+        },
+        "sentiment_history": [
+          { "time": "00:00:00", "sentiment": "NEUTRAL", "score": 50 },
+          { "time": "00:00:30", "sentiment": "FRUSTRATED", "score": 35 },
+          { "time": "00:01:00", "sentiment": "FRUSTRATED", "score": 30 },
+          { "time": "00:01:30", "sentiment": "ANGRY", "score": 20 },
+          { "time": "00:02:00", "sentiment": "ANGRY", "score": 15 },
+          { "time": "00:02:30", "sentiment": "ANGRY", "score": 12 },
+          { "time": "00:03:00", "sentiment": "ANGRY", "score": 10 }
+        ],
+        "ai_intervention_plan": {
+          "recommended_action": "supervisor_join",
+          "confidence": 92,
+          "reasoning": "High-value customer (LTV $2,890) expressing cancellation intent due to prolonged outage affecting business operations. Immediate supervisor intervention can prevent churn.",
+          "guided_steps": [
+            {
+              "step": 1,
+              "priority": "CRITICAL",
+              "action": "Acknowledge business impact and apologize",
+              "script": "Ms. Rodriguez, I'm [Supervisor Name], the supervisor on duty. I've reviewed your situation and I sincerely apologize for this extended outage affecting your work. I understand this is causing real business impact for you.",
+              "key_points": [
+                "Use supervisor authority to show escalation",
+                "Acknowledge specific business impact (work-from-home)",
+                "Validate customer frustration"
+              ],
+              "expected_outcome": "Customer feels heard and validated"
+            },
+            {
+              "step": 2,
+              "priority": "HIGH",
+              "action": "Provide immediate workaround",
+              "script": "Let me get you working right away. I'm going to walk you through enabling WiFi calling on your device - this will let you make calls over your home internet immediately while we complete the tower repair.",
+              "key_points": [
+                "Offer concrete immediate solution",
+                "Focus on restoring business capability",
+                "Set expectation for guided walkthrough"
+              ],
+              "technical_steps": [
+                "Open Settings app",
+                "Tap 'Cellular' or 'Mobile Data'",
+                "Enable 'WiFi Calling'",
+                "Test call to verify functionality"
+              ],
+              "expected_outcome": "Customer able to make business calls again"
+            },
+            {
+              "step": 3,
+              "priority": "HIGH",
+              "action": "Apply service credit and explain",
+              "script": "I'm also applying a $35 credit to your account right now for this service disruption. You'll see this reflected on your next bill. This is separate from your regular service - it's specifically for the inconvenience today.",
+              "key_points": [
+                "Apply credit immediately during call",
+                "Specify exact dollar amount",
+                "Explain credit is for disruption, not regular service"
+              ],
+              "credit_details": {
+                "amount": 35.0,
+                "reason": "Network outage service disruption - West Hollywood 90069",
+                "apply_to_bill": "next_cycle"
+              },
+              "expected_outcome": "Customer feels compensated for inconvenience"
+            },
+            {
+              "step": 4,
+              "priority": "MEDIUM",
+              "action": "Set up proactive communication",
+              "script": "I've also set up an alert so you'll get a text message the moment our tower is back to 100%. Current ETA is 4:00 PM today. You'll also receive a follow-up from me personally tomorrow to make sure everything is working perfectly.",
+              "key_points": [
+                "Promise proactive updates (text when resolved)",
+                "Give specific ETA",
+                "Commit to personal follow-up"
+              ],
+              "follow_up_details": {
+                "sms_alert": true,
+                "alert_trigger": "tower_restoration_complete",
+                "supervisor_callback": "next_business_day",
+                "callback_window": "10:00 AM - 12:00 PM"
+              },
+              "expected_outcome": "Customer confident in resolution and ongoing support"
+            }
+          ],
+          "success_metrics": {
+            "target_sentiment_improvement": "ANGRY → SATISFIED",
+            "target_risk_reduction": "85 → 25",
+            "churn_prevention": true,
+            "estimated_time": "4-6 minutes"
+          }
+        },
+        "transcript_summary": "Customer experiencing 3+ hour network outage in West Hollywood affecting work-from-home business calls. Frustrated with lack of communication and impact on livelihood. Agent attempted standard troubleshooting but customer escalating to cancellation threats.",
+        "key_phrases": [
+          "I work from home and I can't make any calls",
+          "This has been going on for over three hours",
+          "Nobody told me there was an outage",
+          "I'm losing money every minute I can't work",
+          "I'm seriously considering switching providers"
+        ]
+      },
+      {
+        "call_id": "CALL-001",
+        "customer_id": "TC-887234",
+        "agent_id": "AGT-105",
+        "agent_name": "Michael Chen",
+        "customer_name": "John Smith",
+        "issue_category": "Billing Dispute",
+        "call_duration_seconds": 127,
+        "sentiment": "FRUSTRATED",
+        "sentiment_emoji": "😐",
+        "risk_score": 42,
+        "is_flagged": false,
+        "status": "in_progress",
+        "customer_details": {
+          "phone": "(415) 555-0198",
+          "zip_code": "94102",
+          "plan": "Unlimited Plus",
+          "monthly_value": 85.0,
+          "tenure_months": 38,
+          "ltv": 3456.0,
+          "payment_history": "Perfect"
+        },
+        "issue_details": {
+          "type": "Billing Dispute",
+          "severity": "MEDIUM",
+          "description": "Unexpected $67 international roaming charges from Canada trip",
+          "dispute_amount": 67.0,
+          "trip_dates": "May 8-12, 2024",
+          "trip_destination": "Canada"
+        },
+        "sentiment_history": [
+          { "time": "00:00:00", "sentiment": "NEUTRAL", "score": 55 },
+          { "time": "00:00:30", "sentiment": "FRUSTRATED", "score": 40 },
+          { "time": "00:01:00", "sentiment": "FRUSTRATED", "score": 42 },
+          { "time": "00:01:30", "sentiment": "NEUTRAL", "score": 48 }
+        ],
+        "transcript_summary": "Long-time customer with perfect payment history surprised by roaming charges from Canada business trip. Unaware of international roaming policy. Agent handling well with empathy and credit offer.",
+        "key_phrases": [
+          "I've never had charges like this before",
+          "I didn't know I'd be charged for using my phone in Canada",
+          "I've been a customer for over three years"
+        ]
+      },
+      {
+        "call_id": "CALL-003",
+        "customer_id": "TC-104529",
+        "agent_id": "AGT-108",
+        "agent_name": "Jennifer Lopez",
+        "customer_name": "David Chen",
+        "issue_category": "SIM Activation",
+        "call_duration_seconds": 95,
+        "sentiment": "SATISFIED",
+        "sentiment_emoji": "😊",
+        "risk_score": 12,
+        "is_flagged": false,
+        "status": "in_progress",
+        "customer_details": {
+          "phone": "(650) 555-0177",
+          "zip_code": "94301",
+          "plan": "Value 10GB",
+          "monthly_value": 45.0,
+          "tenure_months": 0,
+          "ltv": 0.0,
+          "payment_history": "New Customer"
+        },
+        "issue_details": {
+          "type": "New Activation",
+          "severity": "LOW",
+          "description": "New customer bringing own device (BYOD), needs SIM activation",
+          "device": "iPhone 13 Pro",
+          "activation_status": "in_progress"
+        },
+        "sentiment_history": [
+          { "time": "00:00:00", "sentiment": "NEUTRAL", "score": 60 },
+          { "time": "00:00:30", "sentiment": "SATISFIED", "score": 70 },
+          { "time": "00:01:00", "sentiment": "SATISFIED", "score": 75 }
+        ],
+        "transcript_summary": "New customer with positive experience during SIM activation. Agent providing clear instructions and friendly service.",
+        "key_phrases": [
+          "Thanks for being so helpful",
+          "This is much easier than I expected",
+          "Great customer service"
+        ]
+      }
+    ],
+    "demo_timeline": [
+      {
+        "time_seconds": 0,
+        "event": "demo_start",
+        "description": "Supervisor dashboard loads showing 3 active calls",
+        "ui_state": {
+          "active_calls": 3,
+          "flagged_calls": 1,
+          "avg_sentiment": "FRUSTRATED"
+        }
+      },
+      {
+        "time_seconds": 2,
+        "event": "highlight_flagged_call",
+        "description": "CALL-002 card pulses with red border, showing risk score 85",
+        "call_id": "CALL-002",
+        "ui_action": "animate_attention"
+      },
+      {
+        "time_seconds": 5,
+        "event": "supervisor_click_details",
+        "description": "Supervisor clicks 'View Details' on flagged call",
+        "call_id": "CALL-002",
+        "ui_action": "open_detail_panel"
+      },
+      {
+        "time_seconds": 8,
+        "event": "review_customer_context",
+        "description": "Detail panel shows customer LTV ($2,890), sentiment history, business impact",
+        "ui_state": {
+          "panel_visible": true,
+          "showing_data": ["customer_profile", "sentiment_graph", "issue_details"]
+        }
+      },
+      {
+        "time_seconds": 12,
+        "event": "supervisor_click_intervene",
+        "description": "Supervisor clicks 'Join Call & Intervene' button",
+        "call_id": "CALL-002",
+        "ui_action": "open_intervention_modal"
+      },
+      {
+        "time_seconds": 15,
+        "event": "view_ai_guidance",
+        "description": "AI-guided 4-step intervention plan appears",
+        "ui_state": {
+          "modal_visible": true,
+          "showing_steps": 4,
+          "confidence": 92
+        }
+      },
+      {
+        "time_seconds": 20,
+        "event": "supervisor_execute_step1",
+        "description": "Supervisor reviews and executes Step 1 (Acknowledge + apologize)",
+        "step": 1,
+        "ui_action": "mark_step_complete"
+      },
+      {
+        "time_seconds": 25,
+        "event": "supervisor_execute_step2",
+        "description": "Supervisor guides WiFi calling setup (Step 2)",
+        "step": 2,
+        "ui_action": "mark_step_complete"
+      },
+      {
+        "time_seconds": 30,
+        "event": "supervisor_execute_step3",
+        "description": "Supervisor applies $35 credit (Step 3)",
+        "step": 3,
+        "ui_action": "mark_step_complete",
+        "system_action": "apply_credit"
+      },
+      {
+        "time_seconds": 35,
+        "event": "supervisor_execute_step4",
+        "description": "Supervisor sets up proactive alerts (Step 4)",
+        "step": 4,
+        "ui_action": "mark_step_complete",
+        "system_action": "schedule_follow_up"
+      },
+      {
+        "time_seconds": 38,
+        "event": "sentiment_recovery",
+        "description": "Customer sentiment improves: ANGRY → SATISFIED",
+        "call_id": "CALL-002",
+        "sentiment_change": {
+          "from": "ANGRY",
+          "to": "SATISFIED",
+          "risk_score_change": {
+            "from": 85,
+            "to": 25
+          }
+        },
+        "ui_action": "animate_success"
+      },
+      {
+        "time_seconds": 42,
+        "event": "supervisor_close_intervention",
+        "description": "Supervisor closes intervention modal, returns to dashboard",
+        "ui_action": "close_modal"
+      },
+      {
+        "time_seconds": 45,
+        "event": "demo_complete",
+        "description": "Dashboard shows updated metrics: 0 flagged calls, churn prevented",
+        "ui_state": {
+          "active_calls": 3,
+          "flagged_calls": 0,
+          "avg_sentiment": "SATISFIED",
+          "churn_prevented": 1
+        }
+      }
+    ],
+    "metrics": {
+      "total_intervention_time": "6 minutes",
+      "sentiment_improvement": "ANGRY → SATISFIED",
+      "risk_reduction": 60,
+      "churn_prevention_value": 2890.0,
+      "customer_retention": true,
+      "ai_confidence": 92
+    }
+  }
+}
